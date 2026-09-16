@@ -8,9 +8,7 @@ export const site = {
   domain: "www.defcon.com.ar",
   description:
     "Asistencia técnica de confianza para tu casa: redes, cámaras, domótica, soporte y reparación de PC. Presencial en CABA y zona norte del GBA, o remoto.",
-  // TODO: reemplazar por el número real en formato internacional sin espacios
-  // ni signos, por ejemplo "5491122334455" (54 + código de área sin 0 + número sin 15).
-  whatsappNumber: "5491100000000",
+  whatsappNumber: "5491156006284",
   whatsappDefaultMessage:
     "Hola! Vi la web de DEFCON y quería consultar por un servicio.",
   // TODO: reemplazar por el mail de contacto real si difiere del de WhatsApp.
