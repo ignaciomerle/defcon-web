@@ -41,7 +41,7 @@ export default function Home() {
               <li>Una sola persona atendiendo: sin cadena de derivaciones.</li>
               <li>Presupuesto a medida antes de empezar cualquier trabajo.</li>
               <li>Contacto directo por WhatsApp, sin formularios.</li>
-              <li>Presencial en CABA y zona norte del GBA, o remoto.</li>
+              <li>Presencial en zona norte del GBA, o remoto desde cualquier lugar.</li>
             </ul>
           </div>
         </div>
@@ -54,12 +54,12 @@ export default function Home() {
             Todo lo que tu casa necesita, en un solo lugar
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-muted">
-            Diez servicios agrupados en tres áreas, pensados para resolver
-            desde una duda puntual hasta una instalación completa.
+            Dieciséis servicios agrupados en cinco áreas, pensados para
+            resolver desde una duda puntual hasta un proyecto digital propio.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {serviceCategories.map((category) => (
             <Link
               key={category.slug}

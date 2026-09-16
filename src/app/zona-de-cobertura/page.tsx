@@ -5,7 +5,7 @@ import { WhatsAppInlineButton } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Zona de cobertura",
   description:
-    "DEFCON trabaja de forma presencial en CABA y zona norte del GBA, y de forma remota en todo el país.",
+    "DEFCON trabaja de forma presencial en zona norte del GBA, y de forma remota en cualquier lugar del mundo.",
 };
 
 export default function ZonaDeCoberturaPage() {
@@ -50,8 +50,8 @@ export default function ZonaDeCoberturaPage() {
           ¿No estás seguro de si tu caso aplica?
         </h2>
         <p className="max-w-md text-muted">
-          Contanos tu zona y qué necesitás, y te confirmamos si podemos ir de
-          forma presencial o si conviene resolverlo a distancia.
+          Contanos qué problema necesitás resolver, para darte una solución a
+          medida.
         </p>
         <WhatsAppInlineButton>Consultar por WhatsApp</WhatsAppInlineButton>
       </div>

@@ -7,15 +7,13 @@ export const site = {
   shortName: "DEFCON",
   domain: "www.defcon.com.ar",
   description:
-    "Asistencia técnica de confianza para tu casa: redes, cámaras, domótica, soporte y reparación de PC. Presencial en CABA y zona norte del GBA, o remoto.",
+    "Asistencia técnica de confianza para tu casa: redes, cámaras, domótica, soporte y reparación de PC. Presencial en zona norte del GBA, o remoto desde cualquier parte del mundo.",
   whatsappNumber: "5491156006284",
   whatsappDefaultMessage:
     "Hola! Vi la web de DEFCON y quería consultar por un servicio.",
-  // TODO: reemplazar por el mail de contacto real si difiere del de WhatsApp.
-  contactEmail: "contacto@defcon.com.ar",
   coverage: {
-    presencial: "CABA y zona norte del GBA",
-    remoto: "Todo el país, sin restricción geográfica",
+    presencial: "Zona norte del GBA",
+    remoto: "Cualquier lugar del mundo con conexión a internet",
   },
 } as const;
 
@@ -119,6 +117,58 @@ export const serviceCategories: ServiceCategory[] = [
         title: "Armado de home office",
         description:
           "PC, monitor, impresora y red funcionando en conjunto para quien trabaja desde casa.",
+      },
+    ],
+  },
+  {
+    slug: "desarrollo-web-y-apps",
+    title: "Desarrollo web y apps",
+    description:
+      "Para quien necesita algo más que resolver un problema puntual: un proyecto digital propio, hecho a medida.",
+    services: [
+      {
+        slug: "desarrollo-webs-y-apps",
+        title: "Desarrollo de webs y apps",
+        description:
+          "Sitios web y aplicaciones a medida, desde una página de presentación hasta un sistema a medida. Se coordina el alcance y el presupuesto según el proyecto.",
+      },
+    ],
+  },
+  {
+    slug: "servicios-con-ia",
+    title: "Servicios con IA",
+    description:
+      "Que la inteligencia artificial te resuelva tareas, sin que tengas que volverte experto en IA.",
+    services: [
+      {
+        slug: "asistentes-ia",
+        title: "Asistentes de IA para el día a día",
+        description:
+          "Instalación, configuración y enseñanza de asistentes de IA de uso general (ChatGPT, Claude, Gemini) para que los aproveches en tareas cotidianas.",
+      },
+      {
+        slug: "automatizacion-tareas",
+        title: "Automatización de tareas con IA",
+        description:
+          "Automatización de tareas repetitivas del hogar o de un pequeño emprendimiento con herramientas de IA: clasificar mails, organizar turnos, generar recordatorios.",
+      },
+      {
+        slug: "organizacion-fotos-documentos",
+        title: "Organización de fotos y documentos con IA",
+        description:
+          "Clasificación automática, búsqueda por contenido y eliminación de duplicados en tus fotos y archivos.",
+      },
+      {
+        slug: "chatbots-ia",
+        title: "Chatbots y asistentes con IA para tu web o app",
+        description:
+          "Suma de un chatbot o asistente con IA a un proyecto de desarrollo web o app, como complemento de ese servicio.",
+      },
+      {
+        slug: "asesoramiento-ia",
+        title: "Asesoramiento en herramientas de IA",
+        description:
+          "Ayuda puntual para elegir e implementar una herramienta de IA según la necesidad concreta de tu casa o tu emprendimiento.",
       },
     ],
   },

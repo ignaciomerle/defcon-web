@@ -48,14 +48,6 @@ export function Footer() {
                 WhatsApp
               </a>
             </li>
-            <li>
-              <a
-                href={`mailto:${site.contactEmail}`}
-                className="transition-colors hover:text-accent"
-              >
-                {site.contactEmail}
-              </a>
-            </li>
             <li className="pt-1 text-white/60">
               Presencial: {site.coverage.presencial}
             </li>

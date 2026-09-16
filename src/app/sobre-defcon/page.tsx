@@ -19,7 +19,7 @@ export default function SobreDefconPage() {
       <div className="mt-6 flex flex-col gap-5 text-muted">
         <p>
           DEFCON - Servicios Digitales es un servicio de asistencia técnica
-          para el hogar en CABA y zona norte del GBA. Atiende una sola
+          para el hogar en zona norte del GBA. Atiende una sola
           persona: eso significa que quien coordina el trabajo por WhatsApp
           es la misma que resuelve el problema en tu casa o de forma remota,
           sin derivaciones ni intermediarios.
