@@ -1,69 +1,149 @@
-import Image from "next/image";
+import Link from "next/link";
+import {
+  howItWorksSteps,
+  serviceCategories,
+  site,
+} from "@/lib/site-config";
+import { WhatsAppInlineButton } from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* Hero */}
+      <section className="bg-surface">
+        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-2 md:items-center md:px-8 md:py-24">
+          <div>
+            <h1 className="font-heading text-3xl font-semibold leading-tight text-primary md:text-4xl">
+              La persona de confianza para que tu casa funcione, en lo
+              tecnológico.
+            </h1>
+            <p className="mt-5 max-w-md text-base text-muted md:text-lg">
+              Redes, cámaras, domótica, soporte y reparación de PC. Presencial
+              en {site.coverage.presencial} o a distancia, con trato directo
+              y explicaciones claras.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <WhatsAppInlineButton>Escribinos por WhatsApp</WhatsAppInlineButton>
+              <Link
+                href="/servicios"
+                className="inline-flex items-center justify-center rounded-full border border-primary/20 px-6 py-3 font-heading text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white"
+              >
+                Ver servicios
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-3xl bg-primary p-8 text-white shadow-xl shadow-primary/20">
+            <p className="font-heading text-sm font-semibold uppercase tracking-wide text-accent">
+              Por qué DEFCON
+            </p>
+            <ul className="mt-4 flex flex-col gap-3 text-sm text-white/85">
+              <li>Una sola persona atendiendo: sin cadena de derivaciones.</li>
+              <li>Presupuesto a medida antes de empezar cualquier trabajo.</li>
+              <li>Contacto directo por WhatsApp, sin formularios.</li>
+              <li>Presencial en CABA y zona norte del GBA, o remoto.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Categorías de servicios */}
+      <section className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
+        <div className="text-center">
+          <h2 className="font-heading text-2xl font-semibold text-primary md:text-3xl">
+            Todo lo que tu casa necesita, en un solo lugar
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-muted">
+            Diez servicios agrupados en tres áreas, pensados para resolver
+            desde una duda puntual hasta una instalación completa.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {serviceCategories.map((category) => (
+            <Link
+              key={category.slug}
+              href={`/servicios#${category.slug}`}
+              className="group flex flex-col rounded-2xl border border-border bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+            >
+              <h3 className="font-heading text-lg font-semibold text-primary">
+                {category.title}
+              </h3>
+              <p className="mt-2 flex-1 text-sm text-muted">
+                {category.description}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-dark">
+                Ver servicios
+                <svg
+                  viewBox="0 0 20 20"
+                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="M4 10h12M12 6l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </Link>
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Cómo funciona */}
+      <section className="bg-surface">
+        <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
+          <div className="text-center">
+            <h2 className="font-heading text-2xl font-semibold text-primary md:text-3xl">
+              Cómo funciona
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-muted">
+              Sin vueltas: le escribís a una persona, no a un sistema.
+            </p>
+          </div>
+
+          <ol className="mt-10 grid gap-6 md:grid-cols-3">
+            {howItWorksSteps.map((step, i) => (
+              <li
+                key={step.title}
+                className="rounded-2xl bg-white p-6 shadow-sm"
+              >
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary font-heading text-sm font-semibold text-white">
+                  {i + 1}
+                </span>
+                <h3 className="mt-4 font-heading text-base font-semibold text-primary">
+                  {step.title}
+                </h3>
+                <p className="mt-2 text-sm text-muted">{step.description}</p>
+              </li>
+            ))}
+          </ol>
+
+          <div className="mt-10 flex justify-center">
+            <WhatsAppInlineButton>Empezar por WhatsApp</WhatsAppInlineButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Zona de cobertura resumida */}
+      <section className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
+        <div className="grid gap-8 rounded-2xl border border-border p-8 md:grid-cols-[1fr_auto] md:items-center md:p-10">
+          <div>
+            <h2 className="font-heading text-xl font-semibold text-primary md:text-2xl">
+              ¿Dónde trabajamos?
+            </h2>
+            <p className="mt-2 text-muted">
+              Presencial en {site.coverage.presencial}. De forma remota
+              resolvemos consultas en {site.coverage.remoto.toLowerCase()}.
+            </p>
+          </div>
+          <Link
+            href="/zona-de-cobertura"
+            className="inline-flex items-center justify-center rounded-full border border-primary/20 px-6 py-3 font-heading text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white md:justify-self-end"
+          >
+            Ver zona de cobertura
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
