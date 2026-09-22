@@ -35,7 +35,7 @@ export default function Home() {
 
           <div className="rounded-3xl bg-primary p-8 text-white shadow-xl shadow-primary/20">
             <p className="font-heading text-sm font-semibold uppercase tracking-wide text-accent">
-              Por qué DEFCON
+              Por qué Casa Tecnológica
             </p>
             <ul className="mt-4 flex flex-col gap-3 text-sm text-white/85">
               <li>Una sola persona atendiendo: sin cadena de derivaciones.</li>

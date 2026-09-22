@@ -5,7 +5,7 @@ import { WhatsAppInlineButton } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Cómo funciona",
   description:
-    "Cómo es el proceso para pedir un servicio a DEFCON: contacto por WhatsApp, coordinación presencial o remota, y resolución.",
+    "Cómo es el proceso para pedir un servicio a Casa Tecnológica: contacto por WhatsApp, coordinación presencial o remota, y resolución.",
 };
 
 export default function ComoFuncionaPage() {

@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-border bg-primary text-white/90">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-3 md:px-8">
         <div>
-          <Logo className="[&_span]:text-white [&_span:last-child]:text-white/60" />
+          <Logo className="[&_span]:text-white" />
           <p className="mt-4 max-w-xs text-sm text-white/70">
             {site.description}
           </p>

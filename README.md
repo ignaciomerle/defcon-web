@@ -1,18 +1,8 @@
-# DEFCON - Servicios Digitales — sitio web
+# Casa Tecnológica — sitio web
 
-Sitio de presentación para DEFCON - Servicios Digitales, construido con
-Next.js (App Router) y Tailwind CSS. Sin backend ni base de datos: todo el
-contacto se hace por WhatsApp.
-
-## Antes de publicar
-
-Hay dos datos placeholder que hay que reemplazar en `src/lib/site-config.ts`
-antes de dar el sitio por terminado:
-
-- `whatsappNumber`: número real en formato internacional sin espacios ni
-  signos (ej. `"5491122334455"` = 54 + código de área sin el 0 + número sin
-  el 15).
-- `contactEmail`: mail de contacto real, si es distinto al de WhatsApp.
+Sitio de presentación para Casa Tecnológica, construido con Next.js (App
+Router) y Tailwind CSS. Sin backend ni base de datos: todo el contacto se
+hace por WhatsApp.
 
 ## Desarrollo local
 
@@ -33,7 +23,7 @@ npm run start
 ## Estructura
 
 - `src/app/` — páginas (Inicio, Servicios, Cómo funciona, Zona de cobertura,
-  Sobre DEFCON), una por ruta según el App Router de Next.js.
+  Nosotros), una por ruta según el App Router de Next.js.
 - `src/components/` — Header, Footer, botón de WhatsApp (flotante e inline),
   logo.
 - `src/lib/site-config.ts` — todos los datos editables del sitio: contacto,
@@ -46,13 +36,17 @@ npm run start
 2. En Vercel, "Add New Project" → importar el repositorio. Next.js se
    detecta automáticamente, no hace falta configurar nada más.
 3. Una vez deployado, ir a la configuración del proyecto → Domains, y
-   agregar `defcon.com.ar` y `www.defcon.com.ar`.
+   agregar `tecnologica.casa` y `www.tecnologica.casa`.
 4. En la sección DNS Records del dominio, activar **Enable Vercel DNS**.
-5. En NIC Argentina (nic.ar → Trámites a Distancia), delegar el dominio a:
+5. En Namecheap (Domain List → Manage → Nameservers → **Custom DNS**),
+   cargar:
    - `ns1.vercel-dns.com`
    - `ns2.vercel-dns.com`
-6. Esperar la propagación del DNS (hasta 48 hs según nic.ar, normalmente
-   bastante menos) y verificar que Vercel emitió el certificado HTTPS.
+6. Esperar la propagación del DNS (hasta 24-48 hs, normalmente bastante
+   menos) y verificar que Vercel emitió el certificado HTTPS.
+
+El dominio anterior (defcon.com.ar, en NIC Argentina) queda dado de baja y
+no se renueva.
 
 ## Nota sobre las fuentes
 

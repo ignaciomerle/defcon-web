@@ -3,14 +3,14 @@
 // y componentes leen de este archivo.
 
 export const site = {
-  name: "DEFCON - Servicios Digitales",
-  shortName: "DEFCON",
-  domain: "www.defcon.com.ar",
+  name: "Casa Tecnológica",
+  shortName: "Casa Tecnológica",
+  domain: "tecnologica.casa",
   description:
     "Asistencia técnica de confianza para tu casa: redes, cámaras, domótica, soporte y reparación de PC. Presencial en zona norte del GBA, o remoto desde cualquier parte del mundo.",
   whatsappNumber: "5491156006284",
   whatsappDefaultMessage:
-    "Hola! Vi la web de DEFCON y quería consultar por un servicio.",
+    "Hola! Vi la web de Casa Tecnológica y quería consultar por un servicio.",
   coverage: {
     presencial: "Zona norte del GBA",
     remoto: "Cualquier lugar del mundo con conexión a internet",
@@ -199,5 +199,5 @@ export const navLinks = [
   { href: "/servicios", label: "Servicios" },
   { href: "/como-funciona", label: "Cómo funciona" },
   { href: "/zona-de-cobertura", label: "Zona de cobertura" },
-  { href: "/sobre-defcon", label: "Sobre DEFCON" },
+  { href: "/nosotros", label: "Nosotros" },
 ];

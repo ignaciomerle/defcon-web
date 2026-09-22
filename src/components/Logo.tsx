@@ -1,6 +1,5 @@
 // Ícono simple de marca: casa + señal de conectividad, con formas
-// redondeadas (evita a propósito cualquier iconografía militar / de
-// "nivel de alerta" que el nombre DEFCON podría sugerir por defecto).
+// redondeadas, coherente con el nombre Casa Tecnológica.
 export function LogoMark({ className }: { className?: string }) {
   return (
     <svg
@@ -36,13 +35,8 @@ export function Logo({ className }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2 ${className ?? ""}`}>
       <LogoMark className="h-9 w-9 shrink-0" />
-      <span className="flex flex-col leading-none">
-        <span className="font-heading text-lg font-semibold text-primary">
-          DEFCON
-        </span>
-        <span className="text-[11px] tracking-wide text-muted">
-          Servicios Digitales
-        </span>
+      <span className="font-heading text-lg font-semibold leading-none text-primary">
+        Casa Tecnológica
       </span>
     </span>
   );

@@ -5,7 +5,7 @@ import { WhatsAppInlineButton } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "Zona de cobertura",
   description:
-    "DEFCON trabaja de forma presencial en zona norte del GBA, y de forma remota en cualquier lugar del mundo.",
+    "Casa Tecnológica trabaja de forma presencial en zona norte del GBA, y de forma remota en cualquier lugar del mundo.",
 };
 
 export default function ZonaDeCoberturaPage() {
