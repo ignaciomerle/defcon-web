@@ -14,11 +14,12 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-2 md:items-center md:px-8 md:py-24">
           <div>
             <h1 className="font-heading text-3xl font-semibold leading-tight text-primary md:text-4xl">
-              La persona de confianza para que tu casa funcione, en lo
-              tecnológico.
+              Tu contacto de confianza para necesidades tecnológicas
+              cotidianas.
             </h1>
             <p className="mt-5 max-w-md text-base text-muted md:text-lg">
-              Redes, cámaras, domótica, soporte y reparación de PC. Presencial
+              Redes, cámaras, domótica, soporte y reparación de PC y
+              celulares, IA y desarrollo de aplicaciones. Presencial
               en {site.coverage.presencial} o a distancia, con trato directo
               y explicaciones claras.
             </p>
@@ -35,10 +36,10 @@ export default function Home() {
 
           <div className="rounded-3xl bg-primary p-8 text-white shadow-xl shadow-primary/20">
             <p className="font-heading text-sm font-semibold uppercase tracking-wide text-accent">
-              Por qué Casa Tecnológica
+              ¿Por qué Casa Tecnológica?
             </p>
             <ul className="mt-4 flex flex-col gap-3 text-sm text-white/85">
-              <li>Una sola persona atendiendo: sin cadena de derivaciones.</li>
+              <li>Hablá con personas reales, con experiencia.</li>
               <li>Presupuesto a medida antes de empezar cualquier trabajo.</li>
               <li>Contacto directo por WhatsApp, sin formularios.</li>
               <li>Presencial en zona norte del GBA, o remoto desde cualquier lugar.</li>
@@ -51,11 +52,11 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-20">
         <div className="text-center">
           <h2 className="font-heading text-2xl font-semibold text-primary md:text-3xl">
-            Todo lo que tu casa necesita, en un solo lugar
+            Toda la asistencia tecnológica, en un solo lugar.
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-muted">
-            Dieciséis servicios agrupados en cinco áreas, pensados para
-            resolver desde una duda puntual hasta un proyecto digital propio.
+            Conocé todos los servicios agrupados por áreas, pensados para
+            resolver desde una consulta hasta un proyecto digital propio.
           </p>
         </div>
 
