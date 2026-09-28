@@ -86,7 +86,7 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "soporte-y-mantenimiento",
     title: "Soporte y mantenimiento",
     description:
-      "El día a día con tus dispositivos, sin trabas y sin que nadie te apure.",
+      "Ayuda con tus dispositivos",
     services: [
       {
         slug: "asistente-digital",

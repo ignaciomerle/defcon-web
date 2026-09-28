@@ -16,8 +16,8 @@ export default function ComoFuncionaPage() {
           Cómo funciona
         </h1>
         <p className="mt-3 text-muted">
-          Nada de formularios largos ni esperas sin respuesta. El proceso es
-          simple y siempre hablás con la misma persona, de punta a punta.
+          Simple; nos escribís, hablás con un asistente y vemos cómo
+          ayudarte.
         </p>
       </header>
 

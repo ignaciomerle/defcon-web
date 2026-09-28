@@ -19,24 +19,19 @@ export default function NosotrosPage() {
       <div className="mt-6 flex flex-col gap-5 text-muted">
         <p>
           Casa Tecnológica es un servicio de asistencia técnica para el hogar
-          en zona norte del GBA. Atiende una sola persona: eso significa que
-          quien coordina el trabajo por WhatsApp es la misma que resuelve el
-          problema en tu casa o de forma remota, sin derivaciones ni
-          intermediarios.
+          en zona norte del GBA.
         </p>
         <p>
           La idea nació de una necesidad simple: en la mayoría de las casas
-          hay algo tecnológico sin resolver — una red que anda mal, una
-          cámara que nunca se terminó de configurar, una PC lenta, dudas del
-          celular que nadie tiene tiempo de explicar sin apurar. Casa
-          Tecnológica existe para resolver todo eso en un solo lugar, con
-          explicaciones claras y sin tecnicismos innecesarios.
+          hay algo tecnológico sin resolver — el WiFi que no cubre toda la
+          casa, una cámara que no se ve bien, una PC lenta, dudas del celular
+          que nadie tiene tiempo de resolver. Casa Tecnológica existe para
+          resolver todos esos pendientes, con explicaciones claras y sin
+          tecnicismos innecesarios.
         </p>
         <p>
-          Ser una operación de una sola persona tiene una ventaja concreta:
-          trato directo, sin pasar por una mesa de ayuda ni por distintos
-          técnicos en cada visita. Vos hablás siempre con la misma persona,
-          de principio a fin.
+          Ofrecemos trato directo, sin pasar por una mesa de ayuda ni por
+          distintos técnicos en cada visita.
         </p>
       </div>
 
