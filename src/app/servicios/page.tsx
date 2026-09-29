@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { serviceCategories } from "@/lib/site-config";
 import { WhatsAppInlineButton } from "@/components/WhatsAppButton";
+import { CategoryBanner } from "@/components/CategoryBanner";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -28,10 +29,11 @@ export default function ServiciosPage() {
             id={category.slug}
             className="scroll-mt-24"
           >
-            <h2 className="font-heading text-2xl font-semibold text-primary">
-              {category.title}
-            </h2>
-            <p className="mt-2 max-w-2xl text-muted">{category.description}</p>
+            <CategoryBanner
+              slug={category.slug}
+              title={category.title}
+              description={category.description}
+            />
 
             <div className="mt-6 grid gap-5 md:grid-cols-2">
               {category.services.map((service) => (
